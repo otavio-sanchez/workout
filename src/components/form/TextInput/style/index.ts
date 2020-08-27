@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import colors from '../../../../assets/theme/colors';
 import sizes from '../../../../assets/theme/sizes';
-import Loader from '../../../../assets/icons/loading.svg';
 
 const InputWrapper = styled.div`
     position: relative;
@@ -34,14 +33,4 @@ const Input = styled.input<{ focused?: boolean }>`
     }
 `;
 
-const IconLoader = styled(Loader)`
-    width: 26px;
-    height: 26px;
-    margin: auto;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 2;
-`;
-
-export { Input, InputWrapper, IconLoader };
+export { Input, InputWrapper };

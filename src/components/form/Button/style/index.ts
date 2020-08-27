@@ -9,19 +9,21 @@ const ButtonWrapper = styled.div`
 `;
 
 const ButtonComponent = styled.button<any>`
-    color: ${colors.secondary};
+    color: ${colors.main};
     font-size: ${sizes.font.fontSizeSmall}px;
     height: 48px;
     z-index: 1;
     border-radius: 8px;
     padding: 8px 20px;
-    border: 1px solid ${({ active }) => (active ? colors.main : 'rgb(153, 153, 153)')};
+    border: 1px solid ${({ active }) => (active ? colors.main : colors.main)};
     background-color: ${colors.light};
-    width: 100%;
     cursor: pointer;
+    transition: all .5s;
+    width: 100%;
 
     &:hover {
-        color: ${colors.main};
+        color: ${colors.secondary};
+        border: 1px solid ${colors.secondary};
     }
 
     &:focus {

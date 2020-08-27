@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Input, InputWrapper, IconLoader } from './style';
+import { Input, InputWrapper } from './style';
 import { Props } from './types';
 import { Text } from '../../typography';
 
@@ -24,8 +24,6 @@ const TextInput = ({ label, placeholder, onChange, name, type, loading, value }:
                 value={value}
                 type={type ? type : 'text'}
             />
-
-            {loading ? <IconLoader /> : <></>}
         </InputWrapper>
     );
 };
