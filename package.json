@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "react": "^16.13.1",
+    "react-datepicker": "^3.1.3",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.1.1"
@@ -19,13 +20,16 @@
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",
     "@types/react": "^16.9.48",
+    "@types/react-datepicker": "^3.1.1",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
     "@types/styled-components": "^5.1.2",
     "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^4.2.2",
     "eslint": "^7.7.0",
     "html-webpack-plugin": "^4.3.0",
     "source-map-loader": "^1.0.2",
+    "style-loader": "^1.2.1",
     "ts-loader": "^8.0.3",
     "typescript": "^4.0.2",
     "typescript-eslint": "0.0.1-alpha.0",
