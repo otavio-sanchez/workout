@@ -1,5 +1,11 @@
 import React from "react";
-import { Form, TextInput, Button, Datepicker } from "../../components/form";
+import {
+  Form,
+  TextInput,
+  Button,
+  Datepicker,
+  Select,
+} from "../../components/form";
 
 const Home = (): JSX.Element => {
   return (
@@ -14,6 +20,19 @@ const Home = (): JSX.Element => {
         onChange={(date: any) => {
           console.log(date);
         }}
+        name="date"
+      />
+      <Select
+        name="activities"
+        onClick={(value) => {
+          console.log(value);
+        }}
+        options={[
+          {
+            value: "1",
+            key: "A",
+          },
+        ]}
       />
       <Button onClick={() => {}} text={"Add"} />
     </Form>

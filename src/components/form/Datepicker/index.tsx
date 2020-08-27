@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { Props } from "./types";
 import { Picker } from "./style";
 
-const DatePicker = ({ onChange, placeholder }: Props): JSX.Element => {
+const DatePicker = ({ onChange, placeholder, name }: Props): JSX.Element => {
   const [startDate, setStartDate]: any = useState(new Date());
 
   return (
     <Picker
       selected={startDate}
       onChange={(date: Date | [Date, Date]): void => {
-        onChange(date);
+        onChange(name, date);
         setStartDate(date);
       }}
       placeholderText={placeholder || "Date"}

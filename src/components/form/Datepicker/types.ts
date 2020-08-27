@@ -1,4 +1,5 @@
 export interface Props {
-    onChange: Function;
+    onChange?: (name: string, value: Date | [Date, Date]) => void;
     placeholder?: string;
+    name: string
 }
