@@ -11,9 +11,9 @@
   "author": "otavio sanchez",
   "license": "ISC",
   "dependencies": {
-    "babel-preset-es2015": "^6.24.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",
@@ -27,6 +27,8 @@
     "typescript-eslint": "0.0.1-alpha.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "@types/react-router-dom": "^5.1.5",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
