@@ -2,10 +2,12 @@ import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { routes } from "./routes";
 import { ConfigRoute } from "./routes/types";
+import { Theme } from './assets/theme';
 
 const App = (): JSX.Element => {
   return (
     <Router>
+      <Theme />
       <Switch>
         {routes.map(
           ({
