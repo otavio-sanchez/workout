@@ -5,7 +5,7 @@ const ContainerContent = styled.section<{ maxWidth?: number | string; alternativ
     position: relative;
     display: block;
     max-width: ${sizes.container.maxWidth}px;
-    width: ${({ alternative }): string => (alternative ? '100%' : '80vw')};
+    width: 100%;
     margin: auto;
     ${({ maxWidth }): string => (maxWidth ? `max-width: ${maxWidth}px;` : '')}
 `;

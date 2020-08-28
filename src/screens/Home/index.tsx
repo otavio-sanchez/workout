@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import FormWorkout from "./components/FormWorkout";
-import {
-  Table,
-  TableRow,
-  TableCol,
-  TableColHead,
-} from "../../components/table";
+import TableWorkout from "./components/TableWorkout";
 
 const Home = (): JSX.Element => {
   const [list, setList] = useState([]);
@@ -19,23 +14,7 @@ const Home = (): JSX.Element => {
     <>
       <FormWorkout title={"Test"} onSubmit={add} />
 
-      <Table
-        header={
-          <>
-            <TableColHead>Tempo</TableColHead>
-            <TableColHead>Tipo</TableColHead>
-            <TableColHead>Data</TableColHead>
-          </>
-        }
-      >
-        {list.map((item, index) => (
-          <TableRow key={index}>
-            <TableCol>{item.time}</TableCol>
-            <TableCol>{item.activies}</TableCol>
-            <TableCol>{item.date}</TableCol>
-          </TableRow>
-        ))}
-      </Table>
+      <TableWorkout list={list} />
     </>
   );
 };
