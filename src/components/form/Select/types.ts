@@ -1,5 +1,5 @@
 export interface Props {
-    onClick?: (name: string, value: string) => void;
+    onChange?: (name: string, value: string) => void;
     label?: string;
     name: string;
     options: [{

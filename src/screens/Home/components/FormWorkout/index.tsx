@@ -45,7 +45,7 @@ const FormWorkout = ({ title, onSubmit }: Props): JSX.Element => {
           <Col>
             <Select
               name="activities"
-              onClick={onChange}
+              onChange={onChange}
               options={[
                 {
                   value: "1",
