@@ -13,7 +13,6 @@ const Home = (): JSX.Element => {
   return (
     <>
       <FormWorkout title={"Test"} onSubmit={add} />
-
       <TableWorkout list={list} />
     </>
   );

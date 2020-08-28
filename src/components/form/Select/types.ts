@@ -5,5 +5,6 @@ export interface Props {
     options: [{
         value: string;
         key: string;
-    }]
+    }];
+    value: string;
 }
