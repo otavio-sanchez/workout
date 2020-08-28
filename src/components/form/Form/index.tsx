@@ -2,9 +2,9 @@ import * as React from "react";
 import { Props } from "./types";
 import { FormContent, Title } from "./style";
 
-const Form = ({ children, title }: Props): JSX.Element => {
+const Form = ({ children, title, onSubmit }: Props): JSX.Element => {
   return (
-    <FormContent>
+    <FormContent onSubmit={onSubmit}>
       <Title>{title}</Title>
       {children}
     </FormContent>

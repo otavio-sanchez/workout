@@ -3,10 +3,10 @@ import { ButtonComponent, ButtonWrapper } from './style';
 import { Props } from './types';
 import { Text } from '../../typography';
 
-const Button = ({ onClick, text, active }: Props): JSX.Element => {
+const Button = ({ onClick, text, active, type }: Props): JSX.Element => {
     return (
         <ButtonWrapper>
-            <ButtonComponent active={active} onClick={() => onClick()}>
+            <ButtonComponent type={type || 'button'} active={active} onClick={() => onClick()}>
                 <>{text}</>
             </ButtonComponent>
         </ButtonWrapper>

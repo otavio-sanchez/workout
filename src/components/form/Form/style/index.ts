@@ -9,6 +9,7 @@ const FormContent = styled.form`
     padding: 18px;
     background-color: ${colors.background};
     border: 1px solid #ddd;
+    box-sizing: border-box;
 `;
 
 const Title = styled.div`

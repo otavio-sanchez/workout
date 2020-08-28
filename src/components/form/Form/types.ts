@@ -1,5 +1,5 @@
 export interface Props {
-    onSubmit?: () => void;
+    onSubmit?: any;
     children: JSX.Element | JSX.Element[];
     title: string;
 }

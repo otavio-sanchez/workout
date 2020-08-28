@@ -9,7 +9,7 @@ const DatePicker = ({ onChange, placeholder, name }: Props): JSX.Element => {
     <Picker
       selected={startDate}
       onChange={(date: Date | [Date, Date]): void => {
-        onChange(name, date);
+        onChange(name, date.toString());
         setStartDate(date);
       }}
       placeholderText={placeholder || "Date"}
