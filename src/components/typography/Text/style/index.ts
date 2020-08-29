@@ -29,7 +29,7 @@ const Default = styled.div<{ type?: string; bold?: boolean }>`
 
 const Error = styled.div<{ type?: string; bold?: boolean }>`
     font-size: ${sizes.font.fontSizeSmall}px;
-    color: ${colors.dark};
+    color: ${colors.alert};
 `;
 
 const Label = styled.label<{ type?: string; bold?: boolean }>`

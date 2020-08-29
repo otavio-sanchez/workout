@@ -9,6 +9,7 @@ const Select = ({
   name,
   options,
   value,
+  error
 }: Props): JSX.Element => {
   return (
     <InputWrapper>
@@ -26,6 +27,7 @@ const Select = ({
             </option>
           ))}
       </SelectInput>
+      {error && <Text type="error">{error}</Text>}
     </InputWrapper>
   );
 };

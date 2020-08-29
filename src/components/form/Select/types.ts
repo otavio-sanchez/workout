@@ -7,4 +7,5 @@ export interface Props {
         key: string;
     }];
     value: string;
+    error?: string;
 }

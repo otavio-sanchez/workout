@@ -7,24 +7,39 @@ import {
   Select,
 } from "../../../../components/form";
 import { Col, Container, Row } from "../../../../components/grid";
-import { Props } from "./types";
+import { Props, Form as FormType } from "./types";
+import { validation, formErrors } from "./validation";
 
 const FormWorkout = ({ title, onSubmit }: Props): JSX.Element => {
-  const initState = {
-    time: "",
+  const initState: FormType = {
+    time: '',
     date: new Date().toString(),
     activities: "",
   };
 
+  const initStateErrors: any = {};
+
   const [form, setForm] = useState(initState);
+  const [errors, setErrors] = useState(initStateErrors);
 
   const onChange = (name: string, value: string) => {
     setForm({ ...form, [`${name}`]: value });
   };
 
-  const submit = () => {
-    onSubmit(form);
-    setForm(initState);
+  const submit = async () => {
+    const validate = await validation(form);
+
+    setErrors(initStateErrors);
+    if (validate) {
+      onSubmit(form);
+      setForm(initState);
+    } else {
+      const formError = await formErrors(form);
+
+      if (formError) {
+        setErrors(formError);
+      }
+    }
   };
 
   return (
@@ -37,6 +52,7 @@ const FormWorkout = ({ title, onSubmit }: Props): JSX.Element => {
               type="number"
               value={form["time"]}
               onChange={onChange}
+              error={errors && errors["time"]}
             />
           </Col>
           <Col>
@@ -53,6 +69,7 @@ const FormWorkout = ({ title, onSubmit }: Props): JSX.Element => {
                   key: "A",
                 },
               ]}
+              error={errors && errors["activities"]}
             />
           </Col>
           <Col>
