@@ -5,7 +5,9 @@ import { Props } from "./types";
 const Table = ({ children, header }: Props): JSX.Element => {
   return (
     <TableContent>
-      {header}
+      <thead>
+        <tr> {header} </tr>
+      </thead>
       <tbody>{children}</tbody>
     </TableContent>
   );

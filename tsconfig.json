@@ -9,5 +9,8 @@
         "types": ["node"],
         "typeRoots": ["./src"],
         "esModuleInterop": true
-    }
+    },
+    "files": [
+        "typings.d.ts"
+    ]
 }
