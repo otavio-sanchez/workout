@@ -5,7 +5,7 @@ import sizes from '../../../../../../assets/theme/sizes';
 const InputWrapper = styled.div`
     position: relative;
     width: 100%;
-    max-width: 592px;
+     
 
     > input {
         outline: none;

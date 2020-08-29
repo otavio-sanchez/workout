@@ -21,7 +21,7 @@ const SelectInput = styled.select`
     padding-right: 20px;
     z-index: 1;
     padding-left: 20px;
-    max-width: 592px;
+     
     border-radius: 8px;
 
 
@@ -40,7 +40,7 @@ const SelectInput = styled.select`
         padding-right: 20px;
         z-index: 1;
         padding-left: 20px;
-        max-width: 592px;
+         
         border-radius: 8px;
         width: 100%;
       }

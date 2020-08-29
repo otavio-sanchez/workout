@@ -21,7 +21,7 @@ const Input = styled.input<{ focused?: boolean }>`
     padding-right: 20px;
     z-index: 1;
     padding-left: 20px;
-    max-width: 592px;
+     
     border-radius: 8px;
 
     @media (max-width: ${sizes.screen.tabletWidth + 1}px) {

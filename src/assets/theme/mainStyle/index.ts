@@ -8,4 +8,8 @@ export default createGlobalStyle`
         font-family: Arial;
         font-size: ${sizes.font.fontSizeMedium}px;
     }
+
+    .react-datepicker-wrapper{
+        width: 100%;
+    }
 `;

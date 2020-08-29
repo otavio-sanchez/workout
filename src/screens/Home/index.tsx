@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import FormWorkout from "./components/FormWorkout";
 import TableWorkout from "./components/TableWorkout";
+import CountExercises from "./components/CountExercises";
+import { Divisor } from '../../components/layout'
 
 const Home = (): JSX.Element => {
   const [list, setList] = useState([]);
@@ -12,8 +14,10 @@ const Home = (): JSX.Element => {
 
   return (
     <>
-      <FormWorkout title={"Test"} onSubmit={add} />
+      <FormWorkout title={"Insert on item"} onSubmit={add} />
+      <Divisor />
       <TableWorkout list={list} />
+      <CountExercises list={list} />
     </>
   );
 };
