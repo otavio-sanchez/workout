@@ -3,7 +3,7 @@ import { Input, InputWrapper } from './style';
 import { Props } from './types';
 import { Text } from '../../typography';
 
-const TextInput = ({ label, placeholder, onChange, name, type, loading, value }: Props): JSX.Element => {
+const TextInput = ({ label, placeholder, onChange, name, type, loading, value, error }: Props): JSX.Element => {
     const [focused, setFocused] = React.useState(false);
 
     return (
@@ -24,6 +24,7 @@ const TextInput = ({ label, placeholder, onChange, name, type, loading, value }:
                 value={value}
                 type={type ? type : 'text'}
             />
+             {error && <Text type="error">{error}</Text>}
         </InputWrapper>
     );
 };

@@ -7,4 +7,5 @@ export interface Props {
     type?: string;
     loading?: boolean;
     value: string;
+    error?: string;
 }

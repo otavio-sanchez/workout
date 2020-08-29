@@ -1,5 +1,5 @@
 export interface Props {
     children: JSX.Element | string;
-    type?: 'subtitle' | 'title' | 'regular' | 'default' | 'label';
+    type?: 'subtitle' | 'title' | 'regular' | 'default' | 'label' | 'error';
     bold?: boolean;
 }

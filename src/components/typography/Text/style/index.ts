@@ -27,6 +27,11 @@ const Default = styled.div<{ type?: string; bold?: boolean }>`
     ${({ bold }): string => bold && 'font-weight: bold;'}
 `;
 
+const Error = styled.div<{ type?: string; bold?: boolean }>`
+    font-size: ${sizes.font.fontSizeSmall}px;
+    color: ${colors.dark};
+`;
+
 const Label = styled.label<{ type?: string; bold?: boolean }>`
     font-size: ${sizes.font.fontSizeMedium}px;
     color: ${colors.light};
@@ -37,4 +42,4 @@ const Label = styled.label<{ type?: string; bold?: boolean }>`
     }
 `;
 
-export { TitleLarge, SubTitle, Regular, Default, Label };
+export { TitleLarge, SubTitle, Regular, Default, Label, Error };

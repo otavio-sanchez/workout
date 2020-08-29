@@ -4,4 +4,5 @@ export default {
   light: "#ffffff",
   dark: "#000000",
   background: "#fff",
+  alert: "#f00",
 };
