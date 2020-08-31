@@ -9,7 +9,7 @@ import {
 import { Col, Container, Row } from "../../../../components/grid";
 import { Props, Form as FormType } from "./types";
 import { validation, formErrors } from "./validation";
-import mockExercises from "../../../../mock/exercises";
+import { exercises as mockExercises } from "../../../../mock/exercises";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

@@ -24,4 +24,4 @@
     value: '8'
 }]
 
-export default exercises
+export  { exercises }
