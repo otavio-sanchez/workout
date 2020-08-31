@@ -19,6 +19,11 @@ const Logo = styled.a`
     &:hover {
         color: ${colors.secondary};
     }
+
+    span {
+        color: ${colors.secondary};
+        font-weight: bold;
+    }
 `;
 
 export { HeaderContent, Logo };

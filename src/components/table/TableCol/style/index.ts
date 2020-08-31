@@ -1,13 +1,14 @@
-import styled from 'styled-components';
-import sizes from '../../../../assets/theme/sizes';
-import colors from   '../../../../assets/theme/colors';
+import styled, { keyframes } from "styled-components";
+import sizes from "../../../../assets/theme/sizes";
+import colors from "../../../../assets/theme/colors";
+
 
 const ColContent = styled.td`
-   position: relative;
-   margin: auto;
-   padding: 16px 8px;
-   padding: 16px 8px;
-   text-align: left;
+  position: relative;
+  margin: auto;
+  padding: 16px 8px;
+  padding: 16px 8px;
+  text-align: left;
 `;
 
 export { ColContent };

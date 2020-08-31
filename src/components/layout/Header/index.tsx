@@ -6,7 +6,7 @@ const Header = ({ name }: Props): JSX.Element => {
   return (
     <HeaderContent>
       <Logo href="#" title={name}>
-        {name}
+        Workout <span>Log</span>
       </Logo>
     </HeaderContent>
   );
