@@ -6,11 +6,11 @@ const ButtonWrapper = styled.div`
     position: relative;
     display: block;
     width: 100%;
+    font-size: ${sizes.font.fontSizeSmall}px;
 `;
 
 const ButtonComponent = styled.button<any>`
     color: ${colors.secondary};
-    font-size: ${sizes.font.fontSizeSmall}px;
     height: 48px;
     z-index: 1;
     border-radius: 8px;
@@ -21,6 +21,7 @@ const ButtonComponent = styled.button<any>`
     transition: all .5s;
     width: 100%;
     font-weight: bold;
+    font-size: ${sizes.font.fontSizeSmall}px;
 
     &:hover {
         color: ${colors.light};

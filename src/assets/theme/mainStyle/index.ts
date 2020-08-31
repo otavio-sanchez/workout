@@ -7,6 +7,7 @@ export default createGlobalStyle`
         background-color: ${colors.background};
         font-family: Arial;
         font-size: ${sizes.font.fontSizeMedium}px;
+        color: ${colors.font};
     }
 
     .react-datepicker-wrapper{

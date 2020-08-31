@@ -19,11 +19,11 @@ const Picker = styled(DatePicker)`
         position: relative;
         box-sizing: border-box;
         color: ${colors.main};
-        font-size: ${sizes.font.fontSizeMedium}px;
         height: 48px;
         padding-right: 20px;
         z-index: 1;
         padding-left: 20px;
+        font-size: ${sizes.font.fontSizeSmall}px;
          
         border-radius: 8px;
 

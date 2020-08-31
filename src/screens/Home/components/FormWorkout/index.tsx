@@ -9,12 +9,15 @@ import {
 import { Col, Container, Row } from "../../../../components/grid";
 import { Props, Form as FormType } from "./types";
 import { validation, formErrors } from "./validation";
+import mockExercises from "../../../../mock/exercises";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const FormWorkout = ({ title, onSubmit }: Props): JSX.Element => {
   const initState: FormType = {
-    time: '',
+    time: "",
     date: new Date().toString(),
-    activities: "",
+    exercises: "",
   };
 
   const initStateErrors: any = {};
@@ -31,6 +34,7 @@ const FormWorkout = ({ title, onSubmit }: Props): JSX.Element => {
 
     setErrors(initStateErrors);
     if (validate) {
+      toast('Exercise added')
       onSubmit(form);
       setForm(initState);
     } else {
@@ -43,41 +47,42 @@ const FormWorkout = ({ title, onSubmit }: Props): JSX.Element => {
   };
 
   return (
-    <Form title={title}>
-      <Container>
-        <Row columnsDesktop={4} columnsTablet={1} columnsMobile={1}>
-          <Col>
-            <TextInput
-              name="time"
-              type="number"
-              value={form["time"]}
-              onChange={onChange}
-              error={errors && errors["time"]}
-            />
-          </Col>
-          <Col>
-            <Datepicker onChange={onChange} name="date" />
-          </Col>
-          <Col>
-            <Select
-              name="activities"
-              onChange={onChange}
-              value={form["activities"]}
-              options={[
-                {
-                  value: "1",
-                  key: "A",
-                },
-              ]}
-              error={errors && errors["activities"]}
-            />
-          </Col>
-          <Col>
-            <Button type="submit" onClick={() => submit()} text={"Add"} />
-          </Col>
-        </Row>
-      </Container>
-    </Form>
+    <>
+      <Form title={title}>
+        <Container>
+          <Row columnsDesktop={4} columnsTablet={1} columnsMobile={1}>
+            <Col>
+              <TextInput
+                name="time"
+                type="number"
+                value={form["time"]}
+                onChange={onChange}
+                error={errors && errors["time"]}
+                placeholder={"Hours"}
+                
+              />
+            </Col>
+            <Col>
+              <Datepicker onChange={onChange} name="date" />
+            </Col>
+            <Col>
+              <Select
+                name="exercises"
+                onChange={onChange}
+                label={"Select Exercise"}
+                value={form["exercises"]}
+                options={mockExercises}
+                error={errors && errors["exercises"]}
+              />
+            </Col>
+            <Col>
+              <Button type="submit" onClick={() => submit()} text={"Add"} />
+            </Col>
+          </Row>
+        </Container>
+      </Form>
+      <ToastContainer />
+    </>
   );
 };
 

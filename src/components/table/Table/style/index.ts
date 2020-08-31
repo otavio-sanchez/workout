@@ -20,6 +20,13 @@ const TableContent = styled.table`
     width: 100%;
     animation: ${slide} 0.5s linear ;
     border: 1px solid #ddd;
+    background-color: #fff;
+
+    thead {
+      tr {
+        border-bottom: 1px solid #ddd;
+      }
+    }
 `;
 
 export { TableContent };

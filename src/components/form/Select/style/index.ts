@@ -23,10 +23,10 @@ const SelectInput = styled.select`
     padding-left: 20px;
      
     border-radius: 8px;
-
+    font-size: ${sizes.font.fontSizeSmall}px;
 
     @media (max-width: ${sizes.screen.tabletWidth + 1}px) {
-        font-size: ${sizes.font.fontSizeMedium}px;
+        font-size: ${sizes.font.fontSizeSmall}px;
     }
 
     ::placeholder {
@@ -35,7 +35,7 @@ const SelectInput = styled.select`
 
     option {
         color: ${colors.main};
-        font-size: ${sizes.font.fontSizeMedium}px;
+        font-size: ${sizes.font.fontSizeSmall}px;
         height: 48px;
         padding-right: 20px;
         z-index: 1;

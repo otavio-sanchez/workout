@@ -7,9 +7,9 @@ interface Error {
 }
 
 const checkout = Yup.object().shape({
-  time: Yup.number().positive("Must be positive").required("Required!"),
+  time: Yup.number().typeError('Must be a number').positive("Must be positive").required("Required!"),
   date: Yup.string().required("Required!"),
-  activities: Yup.string().required("Required!"),
+  exercises: Yup.string().required("Required!"),
 });
 
 const validation = async (form: Form) => await checkout.isValid(form);

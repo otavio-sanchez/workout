@@ -6,5 +6,5 @@ export interface Props {
 export interface Form {
     time: string
     date: string,
-    activities: string,
+    exercises: string,
 }

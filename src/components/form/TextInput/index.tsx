@@ -23,6 +23,7 @@ const TextInput = ({ label, placeholder, onChange, name, type, loading, value, e
                 }}
                 value={value}
                 type={type ? type : 'text'}
+                
             />
              {error && <Text type="error">{error}</Text>}
         </InputWrapper>

@@ -16,7 +16,7 @@ const Input = styled.input<{ focused?: boolean }>`
     position: relative;
     box-sizing: border-box;
     color: ${({ focused }): string => (focused ? colors.secondary : colors.main)};
-    font-size: ${sizes.font.fontSizeMedium}px;
+    font-size: ${sizes.font.fontSizeSmall}px;
     height: 48px;
     padding-right: 20px;
     z-index: 1;
@@ -25,7 +25,7 @@ const Input = styled.input<{ focused?: boolean }>`
     border-radius: 8px;
 
     @media (max-width: ${sizes.screen.tabletWidth + 1}px) {
-        font-size: ${sizes.font.fontSizeMedium}px;
+        font-size: ${sizes.font.fontSizeSmall}px;
     }
 
     ::placeholder {

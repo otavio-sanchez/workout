@@ -9,6 +9,8 @@ const ColContent = styled.td`
   padding: 16px 8px;
   padding: 16px 8px;
   text-align: left;
+  font-size: ${sizes.font.fontSizeSmall}px;
+  color: ${colors.font};
 `;
 
 export { ColContent };

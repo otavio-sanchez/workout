@@ -7,17 +7,14 @@ const FormContent = styled.form`
     flex-direction: grid;
     width: 100%;
     padding: 18px;
-    background-color: ${colors.background};
+    background-color: ${colors.light};
     border: 1px solid #ddd;
     box-sizing: border-box;
 `;
 
-const Title = styled.div`
-    background-color: ${colors.background};
-    position: absolute;
-    top: -9px;
-    left: 18px;
-    padding: 0px 8px;
+const Title = styled(Text).attrs({
+    type: 'title'
+})`
 `
 
 export { FormContent, Title };
