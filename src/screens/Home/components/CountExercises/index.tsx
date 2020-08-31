@@ -3,13 +3,15 @@ import { Col, Container, Row } from "../../../../components/grid";
 import { Props } from "./types";
 import { Form } from "../FormWorkout/types";
 import { Text } from "../../../../components/typography";
-import { Content } from './style'
- 
+import { Content } from "./style";
+
 const CountExercises = ({ list }: Props): JSX.Element => {
   const [hours, setHours] = useState(0);
 
   const countHours = (list: Form[]) => {
-    const total = list.reduce((a, b): number => a + parseFloat(b.time), 0);
+    const total = list && list.length
+      ? list.reduce((a, b): number => a + parseFloat(b.time), 0)
+      : 0;
 
     setHours(total);
   };
@@ -24,10 +26,11 @@ const CountExercises = ({ list }: Props): JSX.Element => {
         <Col>
           <Content>
             <Text type="regular">
-              {hours > 0 &&
-                `${hours.toFixed(1).toString()} ${
-                  hours > 1 ? "hours" : "hour"
-                } of exercise`}
+              {hours > 0
+                ? `${hours.toFixed(1).toString()} ${
+                    hours > 1 ? "hours" : "hour"
+                  } of exercise`
+                : "0 hour"}
             </Text>
           </Content>
         </Col>

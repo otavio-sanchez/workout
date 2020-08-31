@@ -4,8 +4,7 @@ import Home from '../screens/Home';
 
 
 const routesPath = {
-    home: '/',
-    albums: '/albums',
+    home: '/'
 };
 
 const routes: ConfigRoute[] = [

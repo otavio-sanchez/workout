@@ -8,7 +8,7 @@
         "jsx": "react",
         "types": ["node", "jest"],
         "typeRoots": ["./src", "node_modules/@types"],
-        "esModuleInterop": true
+        "esModuleInterop": true,
     },
     "files": [
         "typings.d.ts"

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountExercises renders without crashing given the required props 1`] = `
+<Container>
+  <Row
+    columnsDesktop={1}
+    columnsMobile={1}
+    columnsTablet={1}
+  >
+    <Col>
+      <styled.div>
+        <Text
+          type="regular"
+        />
+      </styled.div>
+    </Col>
+  </Row>
+</Container>
+`;
