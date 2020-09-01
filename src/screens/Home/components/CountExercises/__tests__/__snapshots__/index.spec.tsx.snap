@@ -11,7 +11,9 @@ exports[`CountExercises renders without crashing given the required props 1`] = 
       <styled.div>
         <Text
           type="regular"
-        />
+        >
+          3.0 hours of exercise
+        </Text>
       </styled.div>
     </Col>
   </Row>

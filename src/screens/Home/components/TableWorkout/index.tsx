@@ -6,9 +6,7 @@ import {
   TableCol,
   TableColHead,
 } from "../../../../components/table";
-
 import { Text } from "../../../../components/typography";
-
 import { ButtonIcon } from "../../../../components/form";
 import Icon from "../../../../assets/theme/icons/subtrair.svg";
 
@@ -21,6 +19,21 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Home = ({ list, removeExercise }: Props): JSX.Element => {
   const [listExercises, setListExercises] = useState([]);
+
+  const orderInit = () => {
+    setListExercises(
+      listExercises.sort((a, b) => {
+        if (new Date(a.date) > new Date(b.date)) {
+          return -1;
+        }
+        if (new Date(a.date) < new Date(b.date)) {
+          return 1;
+        }
+
+        return 0;
+      })
+    );
+  };
 
   useEffect(() => {
     orderInit();
@@ -45,22 +58,6 @@ const Home = ({ list, removeExercise }: Props): JSX.Element => {
         }
         if (parseFloat(a.time) < parseFloat(b.time)) {
           return timeAsc ? -1 : 1;
-        }
-
-        return 0;
-      })
-    );
-  };
-
-
-  const orderInit = () => {
-    setListExercises(
-      listExercises.sort((a, b) => {
-        if (new Date(a.date) > new Date(b.date)) {
-          return -1;
-        }
-        if (new Date(a.date) < new Date(b.date)) {
-          return 1;
         }
 
         return 0;

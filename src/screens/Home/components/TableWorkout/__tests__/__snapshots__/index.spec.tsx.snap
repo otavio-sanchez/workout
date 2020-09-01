@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableWorkout renders without crashing given the required props 1`] = `
+<Fragment>
+  <Table
+    header={
+      <React.Fragment>
+        <Col>
+          <React.Fragment>
+            Time
+            <ButtonIcon
+              onClick={[Function]}
+            >
+              <Styled(Component)
+                active={true}
+              />
+            </ButtonIcon>
+          </React.Fragment>
+        </Col>
+        <Col>
+          <React.Fragment>
+            Type
+            <ButtonIcon
+              onClick={[Function]}
+            >
+              <Styled(Component)
+                active={true}
+              />
+            </ButtonIcon>
+          </React.Fragment>
+        </Col>
+        <Col>
+          <React.Fragment>
+            Date
+            <ButtonIcon
+              onClick={[Function]}
+            >
+              <Styled(Component)
+                active={false}
+              />
+            </ButtonIcon>
+          </React.Fragment>
+        </Col>
+        <Col>
+           
+        </Col>
+      </React.Fragment>
+    }
+  >
+    <Row
+      active={[Function]}
+      key="0"
+    >
+      <Col>
+        2 hours
+      </Col>
+      <Col>
+        Inchworm
+      </Col>
+      <Col>
+        31/08/2020
+      </Col>
+      <Col>
+        <styled.div />
+      </Col>
+    </Row>
+    <Row
+      active={[Function]}
+      key="1"
+    >
+      <Col>
+        1 hours
+      </Col>
+      <Col>
+        Run
+      </Col>
+      <Col>
+        31/08/2020
+      </Col>
+      <Col>
+        <styled.div />
+      </Col>
+    </Row>
+  </Table>
+  <ToastContainer
+    autoClose={5000}
+    closeButton={[Function]}
+    closeOnClick={true}
+    draggable={true}
+    draggablePercent={80}
+    hideProgressBar={false}
+    newestOnTop={false}
+    pauseOnFocusLoss={true}
+    pauseOnHover={true}
+    position="top-right"
+    role="alert"
+    rtl={false}
+    transition={[Function]}
+  />
+</Fragment>
+`;

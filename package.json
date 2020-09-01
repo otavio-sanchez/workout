@@ -6,7 +6,6 @@
   "scripts": {
     "start": "webpack-dev-server --inline --hot --open",
     "build": "webpack",
-    "build-hmg": "webpack",
     "lint": "tsc --noEmit && eslint **/*.{js,ts,tsx} --quiet --fix",
     "test": "jest --watch --verbose false "
   },
